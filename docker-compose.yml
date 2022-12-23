@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+
+  db:
+    container_name: postgresql_db_labor
+    image:  postgres
+    ports:
+      - 32700:5432
+    environment:
+      POSTGRES_USER:  root
+      POSTGRES_PASSWORD:  root
+      POSTGRES_DB: labor_exchange
+
+  pgadmin:
+    container_name: pgadmin_db_labor
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - 5050:80
+    depends_on:
+      - db
