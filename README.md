@@ -1,5 +1,7 @@
 # FastAPI-LaborExchange
 
+FastAPI + PostgreSQL + JWT 
+
 Run docker containers:
 
     build
