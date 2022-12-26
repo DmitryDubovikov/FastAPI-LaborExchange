@@ -30,6 +30,7 @@ class UserRepository(BaseRepository):
     
     
     async def create(self, u: UserIn) -> User:
+        print(u)
         user = User(
             name=u.name,
             email=u.email,
