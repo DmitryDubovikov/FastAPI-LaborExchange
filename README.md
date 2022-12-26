@@ -1,11 +1,13 @@
 # FastAPI-LaborExchange
 
-FastAPI + PostgreSQL + JWT 
+FastAPI + JWT + PostgreSQL + pgAdmin. 
+
+Labor exchange app: users and jobs. 
 
 Run docker containers:
 
-    build
-    up
+    docker-compose build
+    docker-compose up
 
 Check app endpoints:
 
